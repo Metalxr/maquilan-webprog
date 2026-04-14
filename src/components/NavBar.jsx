@@ -57,6 +57,23 @@ const NavBar = () => {
           ))}
         </nav>
 
+        {/* Auth Links (Enhancement 3) */}
+        <div className="hidden items-center gap-2 md:flex">
+         <NavLink
+          to="/auth/signin"
+          className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-600 hover:text-red-600 transition"
+         >
+          Sign In
+         </NavLink>
+
+         <NavLink
+          to="/auth/signup"
+          className="rounded-full bg-red-500 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.2em] text-white hover:bg-red-600 transition"
+        >
+          Sign Up
+         </NavLink>
+        </div>
+
         {/* CTA Button */}
         <a
           href="/articles"

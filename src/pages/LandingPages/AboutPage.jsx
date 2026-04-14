@@ -1,9 +1,9 @@
-import Button from "../components/Button";
-import Pokedex from "../assets/pokedex.png";
-import Regions from "../assets/regions.png";
-import Types from "../assets/types.png";
-import Stats from "../assets/stats.png";
-import Gens from "../assets/gens.jpg";
+import Button from "../../components/Button";
+import Pokedex from "../../assets/pokedex.png";
+import Regions from "../../assets/regions.png";
+import Types from "../../assets/types.png";
+import Stats from "../../assets/stats.png";
+import Gens from "../../assets/gens.jpg";
 
 const AboutPage = () => {
   return (

@@ -1,8 +1,8 @@
-import Button from "../components/Button";
-import main from "../assets/main.jpg";
-import Snorlax from "../assets/Snorlax.png";
-import Tyranitar from '../assets/Tyranitar.png';
-import Blastoise from '../assets/Blastoise.png';
+import Button from "../../components/Button";
+import main from "../../assets/main.jpg";
+import Snorlax from "../../assets/Snorlax.png";
+import Tyranitar from "../../assets/Tyranitar.png";
+import Blastoise from "../../assets/Blastoise.png";
 
 const HomePage = () => {
   return (
