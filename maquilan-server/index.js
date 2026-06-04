@@ -14,11 +14,11 @@ connectDB(); // [cite: 209]
 app.use(express.json()); // [cite: 210]
 
 const corsOptions = {
-    origin: "http://localhost:5173", // URL of your Vite frontend development server
-    credentials: true, // [cite: 219]
-    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"], // [cite: 220]
-    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"], // [cite: 220]
-    optionsSuccessStatus: 204 // [cite: 222]
+    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    optionsSuccessStatus: 204
 };
 
 app.use(cors(corsOptions)); // Clean implementation [cite: 224]
