@@ -11,7 +11,7 @@ const app = express(); // [cite: 208]
 connectDB(); // [cite: 209]
 
 // Express Built-in Middleware for JSON
-app.use(express.json()); // [cite: 210]
+ // [cite: 210]
 
 const corsOptions = {
     origin: process.env.FRONTEND_URL || "http://localhost:5173",
@@ -22,7 +22,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions)); // Clean implementation [cite: 224]
-
+app.use(express.json());
 // API Endpoints
 app.use("/api/users", userRoutes); // [cite: 239]
 app.use("/api/articles", articleRoutes); // [cite: 240]
